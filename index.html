@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ivents.fun</title>
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<style>
+body {
+    margin:0;
+    background-color: #eee;
+}
+
+ul {
+    list-style-type: none;
+    color: #111;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #eee;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: 'Open Sans';
+}
+.logo {
+    font-size: 25px;
+    font-family: 'Cantarell';
+    font-weight: bold;
+    color: #9966CC;
+    padding: 6px 15px;
+    float: left;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+.logo:hover {
+    color: #6B478E;
+    cursor: pointer;
+}
+li {
+    float: left;
+}
+
+.nav-link, .active {
+    display: block;
+    color: #555;
+    text-align: center;
+    text-decoration: none;
+    transition: all .1s ease;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px 10px;
+    float: left;
+}
+
+li .nav-link:hover:not(.active), .active:hover:not(.active) {
+    background: rgba(153, 102, 204, 0.75);
+    color: #eee;
+}
+
+.active {
+    color: #9966CC;
+    font-weight: bold;
+}
+.main {
+    font-family: 'Open Sans';
+    margin-top: 30px;
+    padding: 25px;
+}
+@media screen and (max-width: 439px) {
+  .main {margin-top: 80px;}
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+  <ul>
+    <li><a class="logo" href="https://sites.ivents.fun/">ivents.fun</a></li>
+    <li><a class="active">Главное</a></li>
+    <li><a class="nav-link" href="#contact">Ивенты</a></li>
+    <li><a class="nav-link" href="#about">О сайте</a></li>
+  </ul>
+</div>
+<div class="main">
+  Сайт находится в тестировании...
+</div>
+</body>
+</html>
